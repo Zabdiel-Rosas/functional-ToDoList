@@ -19,11 +19,14 @@ h1 {
   margin: 1.5rem 0;
 }
 
+
+/* ToDo App */
 .todo-app {
   background: #161a2b;
   display: flex;
   flex-direction: column;
   justify-content: start;
+  align-items: center;
   width: 520px;
   min-height: 600px;
   text-align: center;
@@ -32,15 +35,16 @@ h1 {
   padding-bottom: 2rem;
 }
 
+/* ToDo Form */
 .todo-form {
-  display: flex;
-  justify-content: center;
+  /* background-color: green; */
+  width: 80%;
   margin-bottom: 2rem;
 }
 
 .todo-input {
-  width: 60%;
-  padding: .8rem 2rem .8rem 2rem;
+  width: 80%;
+  padding: 1rem;
   border: 2px solid #5d0cff;
   border-radius: .5rem 0 0 .5rem;
   outline: none;
@@ -54,7 +58,8 @@ h1 {
 
 .todo-btn {
   width: 20%;
-  border: none;
+  padding: 1rem;
+  border: 2px solid #5d0cff;
   border-radius: 0 .5rem .5rem 0;
   cursor: pointer;
   background: linear-gradient(
@@ -64,4 +69,76 @@ h1 {
   );
   color: #fff;
   text-transform: capitalize;
+}
+
+/* ToDo List */
+.todo-list {
+  /* border: 2px solid pink; */
+  width: 80%;
+  min-height: 350px;
+  margin-bottom: 2rem;
+}
+
+.todo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+  color: #fff;
+  height: 3.5rem;
+  border-radius: .5rem;
+  /* padding: .5rem 0; */
+  margin-bottom: 1rem;
+}
+
+.todo-card:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.todo-card:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+
+.todo-card:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+
+.todo-task {
+  /* background: red; */
+  width: 90%;
+  cursor: pointer;
+}
+
+.todo-icons {
+  /* background: purple; */
+  width: 10%;
+  font-size: 1.4rem;
+}
+
+.todo-task,
+.todo-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.delete-todo {
+  cursor: pointer;
 }
