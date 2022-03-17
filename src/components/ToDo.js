@@ -1,10 +1,15 @@
 import { FaTimesCircle } from "react-icons/fa";
 
-const ToDo = ({ todo, toggle }) => {
+const ToDo = ({ todo, toggle, delTask }) => {
 
   const handleToggle = (e) => {
     e.preventDefault();
     toggle(todo.id);
+  };
+
+  const handleDelete = (e) => {
+    e.preventDefault();
+    delTask(todo.id);
   };
 
   return (
@@ -19,14 +24,17 @@ const ToDo = ({ todo, toggle }) => {
       >
         {todo.task}
       </div>
-      <div className='todo-icons'>
         {
           todo.complete
           ? (
-            <FaTimesCircle className='delete-todo'/>
+            <div className='todo-icons'>
+              <FaTimesCircle
+                className='delete-todo'
+                onClick={handleDelete}
+              />
+            </div>
           ) : (null)
         }
-      </div>
     </div>
   );
 };
