@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "task": "Make Bed",
+    "complete": true
+  },
+  {
+    "id": 2,
+    "task": "Do the dishes",
+    "complete": false
+  },
+  {
+    "id": 3,
+    "task": "Wash Clothes",
+    "complete": true
+  },
+  {
+    "id": 4,
+    "task": "Study Programming",
+    "complete": false
+  }
+]
