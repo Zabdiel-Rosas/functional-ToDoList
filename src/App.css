@@ -37,7 +37,6 @@ h1 {
 
 /* ToDo Form */
 .todo-form {
-  /* background-color: green; */
   width: 80%;
   margin-bottom: 2rem;
 }
@@ -73,7 +72,6 @@ h1 {
 
 /* ToDo List */
 .todo-list {
-  /* border: 2px solid pink; */
   width: 80%;
   min-height: 350px;
   margin-bottom: 2rem;
@@ -91,7 +89,6 @@ h1 {
   color: #fff;
   height: 3.5rem;
   border-radius: .5rem;
-  /* padding: .5rem 0; */
   margin-bottom: 1rem;
 }
 
@@ -120,9 +117,11 @@ h1 {
 }
 
 .todo-task {
-  /* background: red; */
-  width: 90%;
+  width: 100%;
   cursor: pointer;
+  justify-content: start;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 .strike {
@@ -131,15 +130,14 @@ h1 {
 }
 
 .todo-icons {
-  /* background: purple; */
   width: 10%;
   font-size: 1.4rem;
+  justify-content: center;
 }
 
 .todo-task,
 .todo-icons {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100%;
 }
