@@ -1,9 +1,10 @@
 import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div>
-      <h1>App Component</h1>
+    <div className="todo-app">
+      <Header />
     </div>
   );
 }
