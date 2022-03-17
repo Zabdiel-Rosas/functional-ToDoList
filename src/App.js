@@ -30,6 +30,13 @@ function App() {
     setTodoList(toggledList);
   }
 
+  const delTask = (id) => {
+    const removed = todoList.filter(todo => {
+      return todo.id !== id;
+    });
+    setTodoList(removed);
+  };
+
   return (
     <div className='todo-app'>
       <Header />
@@ -37,6 +44,7 @@ function App() {
       <ToDoList
         todoList={todoList}
         toggle={toggle}
+        delTask={delTask}
       />
     </div>
   );
