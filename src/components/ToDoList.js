@@ -1,6 +1,6 @@
 import ToDo from "./ToDo";
 
-const ToDoList = ({ todoList, toggle }) => {
+const ToDoList = ({ todoList, toggle, delTask }) => {
   return (
     <div className='todo-list'>
       {
@@ -11,6 +11,7 @@ const ToDoList = ({ todoList, toggle }) => {
               key={todo.id + todo.task}
               todo={todo}
               toggle={toggle}
+              delTask={delTask}
             />
           )
         })
