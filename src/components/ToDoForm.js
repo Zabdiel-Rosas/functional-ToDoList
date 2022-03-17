@@ -18,8 +18,9 @@ const ToDoForm = ({ addTask }) => {
     <form type='submit' className='todo-form'>
       <input
         type='text'
-        name='todo-input'
+        className='todo-input'
         placeholder='Add a Task...'
+        name='todo-input'
         value={userInput}
         onChange={handleChange}
       />
