@@ -19,11 +19,25 @@ function App() {
     ]);
   };
 
+  const toggle = (id) => {
+    const toggledList = todoList.map(todo => {
+      return (
+        todo.id == id
+        ? {...todo, complete: !todo.complete}
+        : todo
+      )
+    });
+    setTodoList(toggledList);
+  }
+
   return (
-    <div className="todo-app">
+    <div className='todo-app'>
       <Header />
       <ToDoForm addTask={addTask} />
-      <ToDoList todoList={todoList}/>
+      <ToDoList
+        todoList={todoList}
+        toggle={toggle}
+      />
     </div>
   );
 }
